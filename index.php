@@ -6,17 +6,8 @@
 vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà -->
 
 <?php
-include __DIR__ .'/php-classes/movie.php'
+include __DIR__ .'/php-classes/movie.php';
 
-//TODO Movies
-
-$barbie = new Movie("Barbie", 2023,"Commedia/Cinema fantastico","https://www.warnerbros.it/wp-content/uploads/2022/12/Barbie_Teaser-Poster-Italia.jpg");
-$lilo = new Movie("Lilo & Stich", 2002, "Per famiglie/Commedia","https://lumiere-a.akamaihd.net/v1/images/p_liloandstitch_19755_0ba5c55e.jpeg?region=0%2C0%2C540%2C810");
-
-$movie = [
-    $barbie,
-    $lilo
-];
 
 ?>
 
@@ -35,18 +26,22 @@ $movie = [
         <h1>PHP Movies</h1>
     </header>
     <main>
-        <section class="container">
-            <div>
-                <div class="card" style="width: 18rem; heigth: 30rem;">
-                    <img src="..." class="card-img-top" alt="...">
+     
+    <section class="container">
+            <div class="row gap-3">
+               <?php foreach($movies as $movie){?>
+                <div class="card col-3 " style="width: 13rem; heigth: 30rem;" >
+                    <img src="<?= $movie->poster ?>" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> <?= Movie::getTitle(); ?> </h5>
+                        <h5 class="card-title"><?= $movie->getTitle();?> </h5>
                         <p class="card-text"></p>
                         <h6 class="card-text"></h6>
                     </div>
-                    </div>
+                </div>
+               <?php } ?>
             </div>
         </section>
+  
     </main>
 </body>
 </html>
