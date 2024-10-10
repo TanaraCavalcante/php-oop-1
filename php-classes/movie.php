@@ -20,13 +20,13 @@ Class Movie {
         return "$this->title";
     }
 
-    // public funtion getYear(){
-    //     return "$this->year";
-    // }
+     public function getYear(){
+         return "$this->year";
+    }
 
-    // public funtion getGenre(){
-    //     return "$this->genre";
-    // }
+     public function getGenre(){
+         return "$this->genre";
+     }
 }
 
 //TODO Movies

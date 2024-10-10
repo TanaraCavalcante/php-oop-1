@@ -34,8 +34,8 @@ include __DIR__ .'/php-classes/movie.php';
                     <img src="<?= $movie->poster ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?= $movie->getTitle();?> </h5>
-                        <p class="card-text"></p>
-                        <h6 class="card-text"></h6>
+                        <p class="card-text"><?= $movie->getGenre();?></p>
+                        <h6 class="card-text"><?= $movie->getYear();?></h6>
                     </div>
                 </div>
                <?php } ?>
