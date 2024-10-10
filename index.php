@@ -20,17 +20,21 @@ include __DIR__ .'/php-classes/movie.php';
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- CSS -->
+     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <header class="text-center">
-        <h1>PHP Movies</h1>
+    <header class="mb-5">
+        <img src="img/logo.png" alt="">
+        <h2> NaraFlix</h2>
     </header>
     <main>
      
-    <section class="container">
-            <div class="row gap-3">
+    <section class="container-style">
+            <div class="row gap-3 ">
                <?php foreach($movies as $movie){?>
-                <div class="card col-3 " style="width: 13rem; heigth: 30rem;" >
+                <div class="card p-2 text-center" style="width: 13rem; heigth: 30rem;" >
                     <img src="<?= $movie->poster ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?= $movie->getTitle();?> </h5>
