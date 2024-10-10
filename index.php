@@ -29,7 +29,7 @@ include __DIR__ .'/php-classes/movie.php'
                 <div class="card" style="width: 18rem; heigth: 30rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> <?= $message ?> </h5>
+                        <h5 class="card-title"> <?=  ?> </h5>
                         <p class="card-text"></p>
                         <h6 class="card-text"></h6>
                     </div>
