@@ -14,7 +14,11 @@ Class Movie {
         $this -> genre = $genre;
         $this -> poster = $poster;
     }
-    
+
+    //TODO Funzione 
+    public function getTitle(){
+        return "$this->title"
+    }
 }
 
 ?>

@@ -7,6 +7,17 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 
 <?php
 include __DIR__ .'/php-classes/movie.php'
+
+//TODO Movies
+
+$barbie = new Movie("Barbie", 2023,"Commedia/Cinema fantastico","https://www.warnerbros.it/wp-content/uploads/2022/12/Barbie_Teaser-Poster-Italia.jpg");
+$lilo = new Movie("Lilo & Stich", 2002, "Per famiglie/Commedia","https://lumiere-a.akamaihd.net/v1/images/p_liloandstitch_19755_0ba5c55e.jpeg?region=0%2C0%2C540%2C810");
+
+$movie = [
+    $barbie,
+    $lilo
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +40,7 @@ include __DIR__ .'/php-classes/movie.php'
                 <div class="card" style="width: 18rem; heigth: 30rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> <?=  ?> </h5>
+                        <h5 class="card-title"> <?= Movie::getTitle(); ?> </h5>
                         <p class="card-text"></p>
                         <h6 class="card-text"></h6>
                     </div>
