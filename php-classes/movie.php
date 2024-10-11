@@ -47,6 +47,7 @@ $primoBaccio = new Movie("50 first dates", 2004, "commedia/Romantico","https://u
 
 $pompei = new Movie("Pompei", 2014, "Azzione/Avventura", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAOiPTdGo_tuhscTWVUD4SISwjNvOBTeFQErGWUvmh8WbTQ-RM");
 
+//TODO array per il foreach
 $movies = [
     $barbie,
     $lilo,

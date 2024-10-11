@@ -8,7 +8,6 @@ vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori 
 <?php
 include __DIR__ .'/php-classes/movie.php';
 
-
 ?>
 
 <!DOCTYPE html>
