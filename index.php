@@ -12,28 +12,31 @@ include __DIR__ .'/php-classes/movie.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Movies</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- CSS -->
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
     <header class="mb-5">
         <img src="img/logo.png" alt="">
         <h2> NaraFlix</h2>
     </header>
     <main>
-     
-    <section class="container-style">
+
+        <section class="container-style">
             <div class="row gap-3 ">
-               <?php foreach($movies as $movie){?>
-                <div class="card p-2 text-center" style="width: 13rem; heigth: 30rem;" >
+                <?php foreach($movies as $movie){?>
+                <div class="card p-2 text-center card-movie" style="width: 13rem;">
                     <img src="<?= $movie->poster ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?= $movie->getTitle();?> </h5>
@@ -41,10 +44,11 @@ include __DIR__ .'/php-classes/movie.php';
                         <h6 class="card-text"><?= $movie->getYear();?></h6>
                     </div>
                 </div>
-               <?php } ?>
+                <?php } ?>
             </div>
         </section>
-  
+
     </main>
 </body>
+
 </html>

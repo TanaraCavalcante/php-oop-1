@@ -34,3 +34,7 @@ header{
 header img{
     max-width: 5%;
 }
+
+.card-movie{
+    height: 30rem;
+}
